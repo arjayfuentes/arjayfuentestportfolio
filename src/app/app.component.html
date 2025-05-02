@@ -1,2 +1,64 @@
-<app-nx-welcome></app-nx-welcome>
 <router-outlet></router-outlet>
+<div class="container mx-auto p-4">
+  <!-- Text Styles -->
+  <h1 class="text-3xl font-bold text-blue-600 mb-4">Tailwind CSS Test</h1>
+  <p class="text-gray-700 mb-2">This is a regular paragraph</p>
+  <p class="text-lg font-semibold text-green-600">Success message!</p>
+  <p class="text-red-500 underline">Error message!</p>
+
+  <!-- Button Styles -->
+  <div class="my-4">
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Primary Button
+    </button>
+    <button
+      class="ml-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+    >
+      Secondary Button
+    </button>
+  </div>
+
+  <!-- Card Component -->
+  <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4 mt-4">
+    <div class="font-bold text-xl mb-2">Test Card</div>
+    <p class="text-gray-700 text-base">
+      This is a test card using Tailwind CSS classes. If styles are applied
+      properly, you should see:
+    </p>
+    <ul class="list-disc ml-4 mt-2">
+      <li class="text-sm">Box shadow</li>
+      <li class="text-sm">White background</li>
+      <li class="text-sm">Proper spacing</li>
+    </ul>
+  </div>
+
+  <!-- Grid System -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+    <div class="bg-pink-100 p-4 rounded">Grid Item 1</div>
+    <div class="bg-yellow-100 p-4 rounded">Grid Item 2</div>
+    <div class="bg-purple-100 p-4 rounded">Grid Item 3</div>
+  </div>
+
+  <!-- Responsive Design -->
+  <div class="mt-8 text-center">
+    <div class="bg-blue-200 md:bg-green-200 lg:bg-red-200 p-4 rounded">
+      Resize the browser to see color changes:
+      <span class="block md:hidden">Mobile view</span>
+      <span class="hidden md:block lg:hidden">Tablet view</span>
+      <span class="hidden lg:block">Desktop view</span>
+    </div>
+  </div>
+</div>
+<div class="card flex justify-center">
+  <p-button label="Check" />
+  <p-button label="Check" severity="danger" size="small" styleClass="ml-3" />
+</div>
+<div class="card flex justify-center p-2 mt-3 gap-4">
+  <i class="pi pi-check"></i>
+  <i class="pi pi-check" style="color: slateblue"></i>
+  <i class="pi pi-times" style="color: green"></i>
+  <i class="pi pi-search" style="color: var(--primary-color)"></i>
+  <i class="pi pi-user" style="color: #708090"></i>
+</div>
