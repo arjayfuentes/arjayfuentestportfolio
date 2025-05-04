@@ -1,0 +1,43 @@
+:host ::ng-deep .custom-menubar {
+    .p-menubar {
+      @apply bg-black border border-gray-800 rounded-none;
+    }
+  
+    .p-menuitem-text {
+      @apply text-white;
+    }
+  
+    .p-menuitem-link:hover {
+      @apply bg-gray-800;
+    }
+  
+    .active-menu-item {
+      @apply bg-gray-800;
+  
+      .p-menuitem-text {
+        @apply text-white;
+      }
+    }
+  }
+
+  /* Override PrimeNG Menubar styles */
+.custom-menubar .p-menubar {
+    @apply bg-black border border-gray-800 rounded-none;
+  }
+  
+  .custom-menubar .p-menuitem-text {
+    @apply text-white;
+  }
+  
+  .custom-menubar .p-menuitem-link:hover {
+    @apply bg-gray-800;
+  }
+  
+  /* Active menu item style */
+  .custom-menubar .active-menu-item {
+    @apply bg-gray-800;
+  }
+  
+  .custom-menubar .active-menu-item .p-menuitem-text {
+    @apply text-white;
+  }

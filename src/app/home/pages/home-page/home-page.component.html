@@ -1,0 +1,37 @@
+<!-- template remains the same -->
+<div class="bg-black py-3">
+  <div class="mx-auto md:max-w-[80%] w-full mt-2">
+    <div class="flex justify-end space-x-4 px-3 sm:px-3 md:px-7">
+      <a
+        *ngFor="let item of items"
+        class="text-sm sm:text-sm md:text-base text-white px-1 sm:px-1 md:px-4 py-2 rounded hover:bg-gray-700 transition-colors cursor-pointer"
+        [ngClass]="{
+          'bg-gray-800': item.label?.toLowerCase() === activeSection
+        }"
+        (click)="handleNavigation($event, item)"
+        [attr.href]="item.url ? item.url : null"
+        [attr.target]="item.target"
+      >
+        {{ item.label }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<app-about-me></app-about-me>
+
+<div class="section" id="skills" #section>
+  <app-my-skills></app-my-skills>
+</div>
+
+<div class="section" id="projects" #section>
+  <app-my-projects></app-my-projects>
+</div>
+
+<div class="section" id="experience" #section>
+  <app-work-experiences></app-work-experiences>
+</div>
+
+<div class="section" id="contact" #section>
+  <app-my-contact></app-my-contact>
+</div>

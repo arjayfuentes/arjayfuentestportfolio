@@ -1,0 +1,72 @@
+<section
+  class="flex items-center justify-center relative overflow-hidden min-h-[100vh] p-8"
+>
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"
+  ></div>
+
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div
+      class="relative w-full h-full flex flex-col justify-center items-center bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.7),rgba(0,0,0,1))]"
+      #experienceSelection
+    >
+      <div class="text-center mb-3 sm:mb-3 md:mb-6">
+        <h1
+          class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+          @titleAnim
+          *ngIf="triggerAnim"
+        >
+          Experience
+        </h1>
+      </div>
+      <div
+        class="h-[80vh] experiences-container overflow-y-auto p-5"
+        *ngIf="triggerAnim"
+      >
+        <div
+          *ngFor="let exp of experiences; let i = index"
+          class="p-6 bg-gray-600 rounded-2xl shadow-md hover:shadow-lg transition-shadow w-[80vw] mb-2"
+          [@fadeWithDelay]="{
+            value: '',
+            params: { delay: i * 150, duration: 600 }
+          }"
+        >
+          <h2 class="text-2xl font-semibold text-white mb-1">
+            {{ exp.title }}
+          </h2>
+          <h3 class="text-lg text-white">
+            {{ exp.company }}
+            <span class="text-sm text-white">— {{ exp.period }}</span>
+          </h3>
+          <p class="my-4 text-white text-sm">{{ exp.description }}</p>
+          <!-- <p class="text-white mb-3 text-sm italic">Key Projects:</p>
+
+          <ul class="list-inside pl-4 space-y-2">
+            <li
+              *ngFor="let project of exp.projects"
+              class="flex flex-col space-y-1 text-white text-sm"
+            >
+              <span class="font-bold">{{ project.applicationName }}</span>
+              <span>{{ project.description }}</span>
+            </li>
+          </ul> -->
+          <p class="text-white italic text-sm mt-4">Technologies:</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <p-tag
+              *ngFor="let tech of exp.technologies"
+              severity="info"
+              [rounded]="true"
+              styleClass="py-0"
+            >
+              <div class="flex items-center gap-2 px-1 py-0">
+                <p-avatar [image]="tech.image" class="mr-2" shape="circle" />
+
+                <span class="text-xs">{{ tech.technology }}</span>
+              </div>
+            </p-tag>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

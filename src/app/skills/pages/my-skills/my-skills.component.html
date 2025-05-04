@@ -1,0 +1,35 @@
+<section class="relative overflow-hidden min-h-[100vh]">
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"
+  ></div>
+  <div
+    class="absolute inset-0 flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.7),rgba(0,0,0,1))]"
+  >
+    <div
+      class="relative container mx-auto md:max-w-[80%] w-full"
+      #skillsSection
+    >
+      <div class="text-center mb-8">
+        <h1
+          class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+          @titleAnim
+          *ngIf="triggerAnim"
+        >
+          Skills & Technologies
+        </h1>
+      </div>
+      <div
+        *ngIf="triggerAnim"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 p-6"
+      >
+        <div
+          *ngFor="let skill of skills"
+          @fadeInOnEnter
+          class="bg-gray-600 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow hover:shadow-gray-500 text-sm sm:text-base text-gray-200"
+        >
+          <h3 class="font-medium">{{ skill.name }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

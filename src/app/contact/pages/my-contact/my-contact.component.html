@@ -1,0 +1,72 @@
+<section class="relative overflow-hidden min-h-[100vh]">
+  <!-- Background gradient -->
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"
+  ></div>
+
+  <!-- Radial overlay + centering container -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.7),rgba(0,0,0,1))]"
+    ></div>
+
+    <!-- Content -->
+    <div class="max-w-3xl mx-auto text-center content-contact z-10">
+      <h1
+        class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 mb-8"
+      >
+        Let's Connect
+      </h1>
+      <p class="text-gray-300 mb-6">
+        Have a project in mind? Let's create something amazing together.
+      </p>
+
+      <div class="flex items-center justify-center gap-2 text-gray-300 mb-8">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path
+            fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <span class="text-white">Antwerpen, Belgium</span>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+      >
+        <!-- <p-button
+          icon="pi pi-envelope"
+          label="Get in Touch"
+          [rounded]="true"
+          severity="secondary"
+        /> -->
+        <p-button
+          icon="pi pi-file-o"
+          label="View Resume"
+          [rounded]="true"
+          severity="secondary"
+          (click)="goToLink('assets/Ariel Jay Fuentes Resume 2025 EN.pdf')"
+        />
+      </div>
+
+      <div class="flex justify-center gap-6">
+        <!-- <p-button
+          icon="pi pi-github"
+          severity="secondary"
+          [rounded]="true"
+          size="large"
+        /> -->
+        <p-button
+          icon="pi pi-linkedin"
+          severity="secondary"
+          size="large"
+          [rounded]="true"
+          (click)="
+            goToLink('https://www.linkedin.com/in/ariel-jay-fuentes-4561a2101/')
+          "
+        />
+      </div>
+    </div>
+  </div>
+</section>

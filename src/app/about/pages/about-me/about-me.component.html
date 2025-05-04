@@ -1,0 +1,43 @@
+<!-- about-me.component.html -->
+<section
+  class="flex items-center justify-center relative overflow-hidden h-[100vh]"
+>
+  <!-- background layers -->
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"
+  ></div>
+  <div class="absolute inset-0">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.7),rgba(0,0,0,1))]"
+    ></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative z-10 text-center">
+    <div @titleAnim *ngIf="showTitle">
+      <h1
+        class="text-4xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+      >
+        Ariel Jay Fuentes
+      </h1>
+    </div>
+
+    <div @subtitleAnim *ngIf="showSubtitle">
+      <p class="text-xl md:text-2xl text-gray-300 mb-8 px-4">
+        Full Stack Developer
+      </p>
+    </div>
+    <div @subtitleAnim *ngIf="showSubtitle" class="w-[70vw]">
+      <p class="text-lg md:text-xl text-gray-300 mb-8 px-4">
+        Strong experience in both front and back-end development. Have a strong
+        inclination to learn more and enhance skills to further grow in the
+        field of software development. Adaptable and quickly learn new
+        technologies; successful working in both team and self-directed settings
+      </p>
+    </div>
+
+    <div @arrowAnim *ngIf="showArrow">
+      <!-- Add your arrow element here -->
+    </div>
+  </div>
+</section>
