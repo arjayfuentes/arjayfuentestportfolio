@@ -3,7 +3,9 @@ import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
-  imports: [ButtonModule, RouterModule],
+  imports: [
+    ButtonModule, 
+    RouterModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
