@@ -47,6 +47,96 @@ export class WorkExperiencesComponent implements AfterViewInit{
   experiences = [
     {
       title: 'Full Stack Software Developer',
+      company: 'SPRK Industries Inc',
+      location: 'Makati City, Philippines',
+      period: 'March 2022 – June 2022',
+      description: 'Played a key role in developing HomeAppter, a platform designed to simplify property showing management for real estate agents, from initial setup to full UI implementatio. Collaborated closely with the back-end developers to ensure seamless integration of essential features. Additionally, I contributed to the deployment process, helping to configure and set up the application on the cloud, which provided me with a comprehensive understanding of full-stack development and software deployment',
+      projects: [
+        {
+          applicationName: "Homeappter",
+          description: ""
+        },
+      ],
+      technologies: [
+        {
+          technology: "Java",
+          icon: "java",
+          image: "assets/java.png"
+
+        },
+        {
+          technology: "Angular",
+          icon: "angular",
+          image: "assets/angular.png"
+        },
+        
+        {
+          technology: "Spring Boot",
+          icon: "springboot",
+          image: "assets/springboot.png"
+
+        },
+        {
+          technology: "Spring Framework",
+          icon: "springframework",
+          image: "assets/springframework.png"
+
+        },
+        {
+          technology: "Typescript",
+          icon: "typescript",
+          image: "assets/typescript.png"
+
+        },
+        {
+          technology: "AWS",
+          icon: "aws",
+          image: "assets/aws.png"
+
+        }, {
+          technology: "MySQL",
+          icon: "mysql",
+          image: "assets/mysql.png"
+
+        },
+        {
+          technology: "HTML",
+          icon: "html",
+          image: "assets/html.png"
+
+        },
+        {
+          technology: "CSS",
+          icon: "css",
+          image: "assets/css.png"
+
+        },
+        {
+          technology: "PrimeNG",
+          icon: "primeng",
+          image: "assets/primeng.png"
+
+        },{
+          technology: "Gradle",
+          icon: "gradle",
+          image: "assets/gradle.jpg"
+
+        },{
+          technology: "Visual Studio Code",
+          icon: "visualstudiocode",
+          image: "assets/visualstudiocode.png"
+
+        },
+        {
+          technology: "Intellij",
+          icon: "intellij",
+          image: "assets/intellij.png"
+
+        }
+      ]
+    },
+    {
+      title: 'Full Stack Software Developer',
       company: 'RJB Technology Inc',
       location: 'Makati City, Philippines',
       period: 'July 2020 – November 2021',
