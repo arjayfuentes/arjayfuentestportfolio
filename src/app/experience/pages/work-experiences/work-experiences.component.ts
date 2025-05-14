@@ -47,6 +47,139 @@ export class WorkExperiencesComponent implements AfterViewInit{
   experiences = [
     {
       title: 'Full Stack Software Developer',
+      company: '',
+      location: 'Antwerp, Belgium',
+      period: 'December 2024 – June 2025',
+      description: 'As the sole developer of Miyembro, I designed and delivered a scalable microservices-based platform using Java 21, Spring Boot, and Angular 19, enabling efficient organization, membership, and event management. I developed secure RESTful APIs, automated notifications, and a responsive frontend with interactive visualizations, deploying the application on AWS using Docker, Kubernetes, and Nginx. My work included CI/CD pipelines, database management, and custom domain setup for a seamless, secure user experience.',
+      projects: [
+        {
+          applicationName: "Miyembro",
+          description: ""
+        },
+      ],
+      technologies: [
+        {
+          technology: "Java",
+          icon: "java",
+          image: "assets/java.png"
+
+        },
+        {
+          technology: "Angular",
+          icon: "angular",
+          image: "assets/angular.png"
+        },
+        
+        {
+          technology: "Spring Boot",
+          icon: "springboot",
+          image: "assets/springboot.png"
+
+        },
+        {
+          technology: "Spring Framework",
+          icon: "springframework",
+          image: "assets/springframework.png"
+
+        },
+        {
+          technology: "Spring Cloud",
+          icon: "springcloud",
+          image: "assets/springcloud.png"
+
+        },
+        {
+          technology: "Kafka",
+          icon: "kafka",
+          image: "assets/kafka.png"
+
+        },
+        {
+          technology: "Typescript",
+          icon: "typescript",
+          image: "assets/typescript.png"
+
+        },
+        {
+          technology: "AWS",
+          icon: "aws",
+          image: "assets/aws.png"
+        }, 
+        {
+          technology: "Docker",
+          icon: "docker",
+          image: "assets/docker.png"
+
+        },
+        {
+          technology: "Kubernetes",
+          icon: "kubernetes",
+          image: "assets/kubernetes.png"
+
+        },
+        {
+          technology: "Jenkins",
+          icon: "jenkins",
+          image: "assets/jenkins.png"
+
+        },
+        {
+          technology: "HTML",
+          icon: "html",
+          image: "assets/html.png"
+
+        },
+        {
+          technology: "CSS",
+          icon: "css",
+          image: "assets/css.png"
+
+        },
+        {
+          technology: "PrimeNG",
+          icon: "primeng",
+          image: "assets/primeng.png"
+
+        },
+        {
+          technology: "Tailwind",
+          icon: "tailwind",
+          image: "assets/tailwind.png"
+
+        },
+        {
+          technology: "Gradle",
+          icon: "gradle",
+          image: "assets/gradle.jpg"
+
+        },{
+          technology: "Visual Studio Code",
+          icon: "visualstudiocode",
+          image: "assets/visualstudiocode.png"
+
+        },
+        {
+          technology: "Intellij",
+          icon: "intellij",
+          image: "assets/intellij.png"
+
+        },
+        {
+          technology: "PostgreSQL",
+          icon: "postgresql",
+          image: "assets/postgresql.png"
+
+        },
+        {
+          technology: "MongoDB",
+          icon: "mysql",
+          image: "assets/mongodb.png"
+
+        },
+      ]
+    },
+    {
+      title: 'Full Stack Software Developer',
       company: 'SPRK Industries Inc',
       location: 'Makati City, Philippines',
       period: 'March 2022 – June 2022',
