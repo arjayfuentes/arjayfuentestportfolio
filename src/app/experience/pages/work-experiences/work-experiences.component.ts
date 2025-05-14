@@ -47,7 +47,7 @@ export class WorkExperiencesComponent implements AfterViewInit{
   experiences = [
     {
       title: 'Full Stack Software Developer',
-      company: '',
+      company: 'Self-Employed',
       location: 'Antwerp, Belgium',
       period: 'December 2024 – June 2025',
       description: 'As the sole developer of Miyembro, I designed and delivered a scalable microservices-based platform using Java 21, Spring Boot, and Angular 19, enabling efficient organization, membership, and event management. I developed secure RESTful APIs, automated notifications, and a responsive frontend with interactive visualizations, deploying the application on AWS using Docker, Kubernetes, and Nginx. My work included CI/CD pipelines, database management, and custom domain setup for a seamless, secure user experience.',
