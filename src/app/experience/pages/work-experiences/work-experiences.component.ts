@@ -152,17 +152,6 @@ export class WorkExperiencesComponent implements AfterViewInit{
           icon: "gradle",
           image: "assets/gradle.jpg"
 
-        },{
-          technology: "Visual Studio Code",
-          icon: "visualstudiocode",
-          image: "assets/visualstudiocode.png"
-
-        },
-        {
-          technology: "Intellij",
-          icon: "intellij",
-          image: "assets/intellij.png"
-
         },
         {
           technology: "PostgreSQL",
@@ -254,17 +243,6 @@ export class WorkExperiencesComponent implements AfterViewInit{
           icon: "gradle",
           image: "assets/gradle.jpg"
 
-        },{
-          technology: "Visual Studio Code",
-          icon: "visualstudiocode",
-          image: "assets/visualstudiocode.png"
-
-        },
-        {
-          technology: "Intellij",
-          icon: "intellij",
-          image: "assets/intellij.png"
-
         }
       ]
     },
@@ -353,17 +331,6 @@ export class WorkExperiencesComponent implements AfterViewInit{
           technology: "Gradle",
           icon: "gradle",
           image: "assets/gradle.jpg"
-
-        },{
-          technology: "Visual Studio Code",
-          icon: "visualstudiocode",
-          image: "assets/visualstudiocode.png"
-
-        },
-        {
-          technology: "Intellij",
-          icon: "intellij",
-          image: "assets/intellij.png"
 
         },{
           technology: "Actionscript",
@@ -508,18 +475,6 @@ export class WorkExperiencesComponent implements AfterViewInit{
           technology: "Tomcat",
           icon: "tomcat",
           image: "assets/tomcat.png"
-
-        },
-        {
-          technology: "Eclipse",
-          icon: "eclipse",
-          image: "assets/eclipse.png"
-
-        },
-        {
-          technology: "Visual Studio Code",
-          icon: "visualstudiocode",
-          image: "assets/visualstudiocode.png"
 
         },
         {
